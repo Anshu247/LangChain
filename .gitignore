@@ -1,0 +1,14 @@
+# Virtual environment
+myvenv/
+
+# Environment variables
+.env
+
+# Images folder
+img1.png
+
+# Test file
+test.py
+
+# PDF File
+LCNotes.pdf
