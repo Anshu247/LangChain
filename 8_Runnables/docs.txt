@@ -1,0 +1,19 @@
+LangChain is a framework for developing applications powered by language models. It provides modularity, standardization, and composability across the LLM application lifecycle: development, productionization, and monitoring.
+
+Key Components:
+1. Chains: Sequences of components (prompts, models, output parsers) executed in order.
+2. Agents: Systems that use LLMs to decide which tools to use and in what order.
+3. Memory: Provides persistence across interactions, storing chat history or custom data.
+4. Retrievers: Fetch relevant information from vector databases or other sources.
+
+RAG (Retrieval Augmented Generation) combines a retriever with an LLM to answer questions based on external documents. This improves accuracy by grounding responses in specific knowledge bases.
+
+Text splitters break large documents into smaller chunks for better retrieval. Common strategies include recursive splitting (paragraphs → sentences → words) and token-based splitting.
+
+Vector stores like FAISS enable fast similarity search over embeddings. Embeddings convert text to numerical vectors capturing semantic meaning.
+
+Key takeaways:
+- LangChain simplifies building LLM apps with reusable components.
+- Use RAG for knowledge-grounded Q&A.
+- Proper text chunking (500-1000 chars with overlap) improves retrieval.
+- Always use retrievers before LLMs for accurate, context-aware responses.
